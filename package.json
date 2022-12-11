@@ -1,0 +1,27 @@
+{
+  "name": "proyecto_computo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Javyer-gc/Proyecto_computo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Javyer-gc/Proyecto_computo/issues"
+  },
+  "homepage": "https://github.com/Javyer-gc/Proyecto_computo#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "firebase": "^9.15.0",
+    "stripe": "^11.3.0"
+  }
+}
