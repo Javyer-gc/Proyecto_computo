@@ -5,13 +5,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="IMAGENES/logo/icono.png" type="image/x-icon">
-    <title>Bienvenidos a eHelp</title>
+    <title>Contactanos - eHelp</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-    <link href="CSS/style.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="forms.js"></script>
 </head>
 
 <body>
@@ -28,14 +29,14 @@
                         <a class="nav-link" href="index.html">Inicio</a>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="USUARIO/registrarse.php">Registro Pacientes</a>
+                            <a class="nav-link" href="USUARIO/registrarse.php">Registrarse</a>
                         </li>
 
 
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Iniciar sesión</a>
                             <div class="dropdown-menu">
-                                <a class="dropdown-item" href="USUARIO/login.php">Paciente</a>
+                                <a class="dropdown-item" href="USUARIO/login.php">Usuario</a>
                                 <a class="dropdown-item" href="ADMIN/loginAdmin.php">Administrador</a>
                             </div>
                         </li>
@@ -46,37 +47,34 @@
             </div>
         </div>
     </nav>
-    <!---------------------------------------------------------------->
+    <!---------------------------------------------------------------- -->
 
+    <br><br>
 
+    <!-------------------------------------------------------------------->
+    <button type="button" class="btn btn-lg btn-block btn-outline-primary col-8 offset-2" data-toggle="collapse" data-target="#join"><h1 class="display-4">Contactanos y</h1><h1 class="display-4"> Cuentanos tu opinión</h1></button>
 
-    <!-------------------------------------------------------->
-    <div class="container-fluid padding">
-        <div class="row text-center padding">
-            <div class="col-12">
-                <h2 class="display-4">Bienvenidos a eHelp</h1><br>
-                    <p align=center>EL sitio web donde usted podra pedir ayuda hospitalaria si asi la necesitas.</p>
-                    <p align=center>Tan solo registrate y accede a nuestra atencion 24 Hrs.</p>
-                    <hr width="150px">
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-         
-            </div>        
-            </div>
-    <!-------------------------------------------------------->
+    <div id="join" class="collapse">
+        <div class="container">
+            <form action="enviar.php" method="post" id="join-us">
+                <br><label for="name">Nombre</label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="Tu Nombre" required><br>
+                <label for="email">Email</label>
+                <input type="text" class="form-control" id="email" name="email" placeholder="Tu Correo" required><br>
+                <label for="phone">Telefono</label>
+                <input type="text" class="form-control" id="phone" name="mobile" placeholder="Tu Telefono" required><br>
+                </select><br>
+                <label for="subject">Mensaje</label>
+                <textarea id="subject" class="form-control" name="subject" placeholder="Dinos lo que opinas" style="height:100px" required></textarea><br>
+                <button type="submit" name="submit" class="btn btn-primary btn-raised">Enviar</button>
+            </form>
+        </div>
+    </div>
+    <!----------------------------------------------------------------------------->
 
-    <br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
-
-  
- 
-</div>
-
-    <!-------------------------------------------------------->
+    <!-------------------------------------------------------------------------------->
     <footer>
         <div class="container-fluid padding">
             <div class="row text-center font-weight-bold">
@@ -115,11 +113,9 @@
             </div>
         </div>
     </footer>
-
-
-
-    <!-------------------------------------------------------->
+    <!---------------------------------------------------------------->
 
 </body>
+
 
 </html>
