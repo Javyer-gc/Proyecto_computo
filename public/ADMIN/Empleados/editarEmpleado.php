@@ -1,0 +1,41 @@
+<?php
+
+    include_once '../conexion_admin.php';
+
+    $id = $_POST['Id'];
+    $Nombre = $_POST['Nombre'];
+    $Apellidos = $_POST['Apellidos'];
+    $Puesto = $_POST['Puesto'];
+    $Correo = $_POST['Correo'];
+
+        if (verificarUserAndMail($id, $Correo, $conexion) == 1) {
+            echo "<script>
+                        alert('Ya existe el Usuario y/o Correo, por favor ingrese otro.'); 
+                        window.location.href ='../AdministrarEmpleados.php'
+                    </script>";
+        } else {
+            $sql = "UPDATE empleados SET Nombre = '$Nombre', Apellidos = '$Apellidos', Puesto = '$Puesto', Correo = '$Correo' WHERE IdEmpleados = '$id'";
+            $resultado = mysqli_query($conexion, $sql);
+            if (!$resultado) {
+                die('Consulta Fallida');
+            } else {
+                echo "<script>
+                    alert('Empleado Actualizado Correctamente'); 
+                    window.location.href ='../AdministrarEmpleados.php'
+                    </script>";
+            }
+        }
+    
+
+
+    function verificarUserAndMail($id, $mail, $conexion)
+    {
+        $sql_mail = "SELECT * FROM usuariosclientes WHERE Correo = '$mail' AND Idusuario != $id";
+        $resultado_mail = mysqli_query($conexion, $sql_mail);
+
+        if ( mysqli_num_rows($resultado_mail) > 0) {
+            return 1;
+        } else {
+            return 0;
+        }
+    }

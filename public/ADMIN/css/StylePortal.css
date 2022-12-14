@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-family: 'poppins', sans-serif;
+    color: #222;
+}
+
+.navbar {
+    padding: .8rem;
+}
+
+.navbar-nav li {
+    padding-right: 20px;
+}
+
+.nav-link {
+    font-size: 1.1em !important;
+}
+
+hr.light {
+    border-top: 1px solid #d5d5d5;
+    width: 75%;
+    margin-top: .8rem;
+    margin-bottom: 1rem;
+}
+
+hr.light-100 {
+    border-top: 1px solid #d5d5d5;
+    width: 100%;
+    margin-top: .8rem;
+    margin-bottom: 1rem;
+}
+
+.navbar-brand {
+    font-size: 35px;
+}
+
+.logo {
+    width: 10px;
+    font-size: 15px;
+}
+
+h2.worth {
+    font-size: 150%;
+}
+
+img.worth {
+    font-size: 150%;
+}
+
+hr {
+    border-top: 1px solid blue;
+}
+
+hr.a {
+    border-top: 1px solid white;
+}
+
+.container-welcome {
+    padding: 50px 200px;
+}
+
+.apartados {
+    display: flex;
+    padding-left: 2%;
+    padding-right: 25%;
+    padding-bottom: 50px;
+}
+
+.apartados a {
+    flex: 30% 1;
+    text-decoration: none;
+    text-align: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    
+}
+
+footer {
+    background: linear-gradient(to top right, #669999 30%, #666699 70%);
+    color: #D5D5D5;
+    padding-top: 2rem;
+}
+
+footer.blockquote-footer {
+    background: none;
+}
+
+footer a {
+    color: white;
+}

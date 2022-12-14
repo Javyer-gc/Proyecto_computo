@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-family: 'poppins', sans-serif;
+    color: #222;
+}
+
+.navbar {
+    padding: .8rem;
+}
+
+.navbar-nav li {
+    padding-right: 20px;
+}
+
+.nav-link {
+    font-size: 1.1em !important;
+}
+
+hr.light {
+    border-top: 1px solid #d5d5d5;
+    width: 75%;
+    margin-top: .8rem;
+    margin-bottom: 1rem;
+}
+
+hr.light-100 {
+    border-top: 1px solid #d5d5d5;
+    width: 100%;
+    margin-top: .8rem;
+    margin-bottom: 1rem;
+}
+
+.navbar-brand {
+    font-size: 35px;
+}
+
+.logo {
+    width: 10px;
+    font-size: 15px;
+}
+
+h2.worth {
+    font-size: 150%;
+}
+
+img.worth {
+    font-size: 150%;
+}
+
+hr {
+    border-top: 1px solid blue;
+}
+
+hr.a {
+    border-top: 1px solid white;
+}
+
+.container-welcome {
+    padding: 500px 150px;
+}
+
+.top {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.all {
+    width: 100%;
+    margin: 0;
+    padding: 50px 150px;
+    padding-top: 0;
+}
+
+.apartados {
+    display: flex;
+    padding-left: 25%;
+    padding-right: 25%;
+}
+
+.apartados a {
+    flex: 30% 1;
+    text-decoration: none;
+    text-align: center;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.container-tabla {
+    padding-left: 50px;
+    width: 1200px;
+}
+
+.tabla {
+    text-align: center;
+    background-color: white;
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 100%;
+}
+
+.titulo {
+    color: #767676;
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+    width: 100px;
+    word-wrap: break-word;
+}
+
+.column-id {
+    width: 70px;
+}
+
+.column-user {
+    width: 100px;
+}
+
+.column-latitud {
+    width: 100px;
+}
+
+.column-longitud {
+    width: 100px;
+}
+
+.column-verMapa {
+    width: 150px;
+}
+
+.renglon {
+    font-size: 14px;
+    border-bottom: solid rgba(201, 201, 201, 0.966);
+    margin: 2px;
+    padding: 10px 5px;
+    text-align: center;
+    width: 100px;
+    word-wrap: break-word;
+}
+
+.boton {
+    border-bottom: solid rgba(201, 201, 201, 0.966);
+    margin: 2px;
+    padding: 10px 5px;
+    text-align: center;
+    padding-right: 80px;
+    word-wrap: break-word;
+}
+
+.botonVer {
+    border-radius: 3px;
+    text-decoration: none;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+    background-color: #13b715;
+    opacity: 0.7;
+    color: white;
+    border: none;
+    width: 110px;
+}
+
+.botonVer:hover {
+    opacity: 1;
+}
+
+.botonVer:focus {
+    opacity: 1;
+}
+
+footer {
+    background: linear-gradient(to top right, #adcccc 30%, #666699 70%);
+    color: #D5D5D5;
+    padding-top: 2rem;
+}
+
+footer.blockquote-footer {
+    background: none;
+}
+
+footer a {
+    color: white;
+}
+
+.copy {
+    background: #085441;
+    color: white;
+    text-align: left;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+
+/*<div class="copy"><p>Copyright © 2020 Lendo Inc. All rights reserved.</p></div>*/
